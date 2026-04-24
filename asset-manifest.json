@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/myprofessionalportfolio/static/css/main.07d80923.css",
+    "main.js": "/myprofessionalportfolio/static/js/main.4f381e4a.js",
+    "static/js/453.f8dbeeaf.chunk.js": "/myprofessionalportfolio/static/js/453.f8dbeeaf.chunk.js",
+    "static/media/TEAM01_IEEEPAPER_HDL-HVL.pdf": "/myprofessionalportfolio/static/media/TEAM01_IEEEPAPER_HDL-HVL.a236b833bf1da344e220.pdf",
+    "static/media/AEFT_COURSEPROJ_IEEEPaper_CPE-MAT.pdf": "/myprofessionalportfolio/static/media/AEFT_COURSEPROJ_IEEEPaper_CPE-MAT.9a597d916038878d082b.pdf",
+    "static/media/Certificate of Appreciation – John Mitchell Fruto.png": "/myprofessionalportfolio/static/media/Certificate of Appreciation – John Mitchell Fruto.c7da41b865db4558b762.png",
+    "static/media/AFFHN_IEEEfinalpaper.docx-3.pdf": "/myprofessionalportfolio/static/media/AFFHN_IEEEfinalpaper.docx-3.b8d83d2d78fee3fef3b8.pdf",
+    "static/media/TEAM08_COURSEPROJ_IEEEPaper_CPE-CP2.pdf": "/myprofessionalportfolio/static/media/TEAM08_COURSEPROJ_IEEEPaper_CPE-CP2.6c6fa971ecd9f179f17a.pdf",
+    "static/media/Screenshot 2026-04-24 171313.png": "/myprofessionalportfolio/static/media/Screenshot 2026-04-24 171313.d66dd742516a0f0e2ba8.png",
+    "static/media/Screenshot 2026-04-24 171244.png": "/myprofessionalportfolio/static/media/Screenshot 2026-04-24 171244.d312e25764bf819b7f36.png",
+    "static/media/Screenshot 2026-04-24 171132.png": "/myprofessionalportfolio/static/media/Screenshot 2026-04-24 171132.85f9dc75c84e0d1c5935.png",
+    "static/media/fruto (1) (1).PNG": "/myprofessionalportfolio/static/media/fruto (1) (1).540a796033c464c93d18.PNG",
+    "static/media/Screenshot 2026-04-24 173618.png": "/myprofessionalportfolio/static/media/Screenshot 2026-04-24 173618.e2b700d9efd71b755292.png",
+    "static/media/Screenshot 2026-04-24 165223.png": "/myprofessionalportfolio/static/media/Screenshot 2026-04-24 165223.4d1fc6831dd83f185b43.png",
+    "static/media/Screenshot 2026-04-24 165239.png": "/myprofessionalportfolio/static/media/Screenshot 2026-04-24 165239.e9aaa1ee2414472b8fe7.png",
+    "index.html": "/myprofessionalportfolio/index.html",
+    "main.07d80923.css.map": "/myprofessionalportfolio/static/css/main.07d80923.css.map",
+    "main.4f381e4a.js.map": "/myprofessionalportfolio/static/js/main.4f381e4a.js.map",
+    "453.f8dbeeaf.chunk.js.map": "/myprofessionalportfolio/static/js/453.f8dbeeaf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.07d80923.css",
+    "static/js/main.4f381e4a.js"
+  ]
+}
