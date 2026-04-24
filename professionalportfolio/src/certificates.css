@@ -1,0 +1,114 @@
+/* ── Certificates Section ── */
+.certificates-section { background: #f5f3ef; }
+
+/* Category buttons */
+.cert-cats {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.cert-cat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 2px solid #ddd;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-mid);
+  transition: all 0.25s;
+}
+
+.cert-cat-btn:hover {
+  border-color: var(--text-dark);
+  color: var(--text-dark);
+}
+
+.cat-active {
+  background: var(--text-dark) !important;
+  border-color: var(--text-dark) !important;
+  color: var(--accent) !important;
+}
+
+.cert-count {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  margin-bottom: 28px;
+}
+
+.cert-count strong { color: var(--text-dark); }
+
+/* Grid */
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.cert-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--text-dark) 0%, #2d3561 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.cert-icon { font-size: 1.4rem; }
+
+.cert-cat-tag {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--accent-dark);
+}
+
+.cert-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.3;
+}
+
+.cert-issuer,
+.cert-date,
+.cert-id {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.cert-id { font-family: monospace; font-size: 0.72rem; }
+
+.cert-desc {
+  font-size: 0.8rem;
+  color: var(--text-mid);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.cert-photo {
+  height: 120px;
+  border-radius: var(--border-radius-sm);
+  margin-top: 6px;
+  cursor: pointer;
+  transition: opacity 0.25s;
+}
+
+.cert-photo:hover { opacity: 0.85; }

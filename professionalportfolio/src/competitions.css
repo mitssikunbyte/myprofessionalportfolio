@@ -1,0 +1,89 @@
+/* ── Competitions Section ── */
+.competitions-section { background: #f5f3ef; }
+
+.competitions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comp-card {
+  display: grid;
+  grid-template-columns: 64px 1fr 160px;
+  gap: 24px;
+  align-items: center;
+}
+
+.comp-medal {
+  font-size: 2.8rem;
+  text-align: center;
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+  animation: float 3s ease-in-out infinite;
+}
+
+.comp-info { flex: 1; }
+
+.comp-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+}
+
+.comp-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.comp-badges { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+
+.comp-level-badge {
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.comp-event {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--accent-dark);
+  margin-bottom: 4px;
+}
+
+.comp-org {
+  font-size: 0.78rem;
+  color: var(--text-light);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.comp-desc {
+  font-size: 0.84rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+.comp-photo {
+  height: 110px;
+  border-radius: var(--border-radius-sm);
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .comp-card {
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto;
+  }
+  .comp-photo {
+    grid-column: 1 / -1;
+    height: 90px;
+  }
+  .comp-medal { font-size: 2.2rem; }
+}

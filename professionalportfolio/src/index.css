@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* ─── CSS Variables / Design Tokens ─── */
+:root {
+  --bg: #e8e6e1;
+  --card-bg: #ffffff;
+  --accent: #f5c518;
+  --accent-dark: #d4a80f;
+  --text-dark: #1a1a2e;
+  --text-mid: #444466;
+  --text-light: #888;
+  --border-radius: 32px;
+  --border-radius-sm: 16px;
+  --shadow: 0 8px 32px rgba(0,0,0,0.10);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.14);
+  --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --nav-width: 260px;
+}
+
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-dark);
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 4px; }
+
+/* ─── Typography ─── */
+h1, h2, h3, h4 { font-family: 'Fredoka One', cursive; letter-spacing: 0.02em; }
+
+/* ─── Shared Section Styles ─── */
+.section {
+  min-height: 100vh;
+  padding: 80px 48px 80px calc(var(--nav-width) + 48px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.section-number {
+  font-family: 'Fredoka One', cursive;
+  font-size: 8rem;
+  color: rgba(0,0,0,0.05);
+  position: absolute;
+  top: 32px;
+  left: calc(var(--nav-width) + 24px);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 48px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  font-family: 'Fredoka One', cursive;
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  line-height: 1;
+}
+
+.section-title .dot { color: var(--accent); }
+
+.section-divider {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(to right, var(--accent), transparent);
+  border-radius: 2px;
+}
+
+/* ─── Card ─── */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 32px;
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* ─── Pill / Badge ─── */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--accent);
+  color: var(--text-dark);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 14px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Photo Placeholder ─── */
+.photo-placeholder {
+  background: linear-gradient(135deg, #e0d5c5 0%, #c8bfb0 100%);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 0.85rem;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(255,255,255,0.15) 10px,
+    rgba(255,255,255,0.15) 20px
+  );
+}
+
+.photo-placeholder .ph-icon {
+  font-size: 2.5rem;
+  opacity: 0.5;
+  position: relative;
+  z-index: 1;
+}
+
+.photo-placeholder .ph-text {
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  color: #777;
+}
+
+/* ─── Fade-in Animation ─── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  opacity: 0;
+  animation: fadeUp 0.7s ease forwards;
+}
+
+.fade-up.delay-1 { animation-delay: 0.1s; }
+.fade-up.delay-2 { animation-delay: 0.2s; }
+.fade-up.delay-3 { animation-delay: 0.3s; }
+.fade-up.delay-4 { animation-delay: 0.4s; }
+.fade-up.delay-5 { animation-delay: 0.5s; }
+
+/* ─── Float animation ─── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+  .section {
+    padding: 80px 24px 60px 24px;
+  }
+  .section-number { left: 16px; font-size: 5rem; }
+  :root { --nav-width: 0px; }
+}

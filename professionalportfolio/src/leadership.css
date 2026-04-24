@@ -1,0 +1,81 @@
+/* ── Leadership Section ── */
+.leadership-section { background: var(--bg); }
+
+.leadership-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.leader-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.leader-top-bar {
+  height: 5px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-dark));
+  border-radius: 5px 5px 0 0;
+}
+
+.leader-icon-wrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: var(--text-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 20px 0;
+}
+
+.leader-icon { font-size: 1.6rem; }
+
+.leader-type {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: var(--accent-dark);
+  padding: 0 20px;
+}
+
+.leader-role {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  padding: 0 20px;
+  line-height: 1.3;
+}
+
+.leader-org {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  padding: 0 20px;
+}
+
+.leader-period {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  font-weight: 500;
+  padding: 0 20px;
+}
+
+.leader-desc {
+  font-size: 0.83rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  padding: 0 20px;
+  flex: 1;
+}
+
+.leader-photo {
+  margin: 12px 20px 20px;
+  height: 100px;
+  border-radius: var(--border-radius-sm);
+}
