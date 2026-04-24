@@ -81,7 +81,7 @@ function HomePage() {
                     {/* Quick stats */}
                     <div className="home-stats fade-up delay-4">
                         <div className="stat-item">
-                            <span className="stat-num">10+</span>
+                            <span className="stat-num">4+</span>
                             <span className="stat-lbl">Projects</span>
                         </div>
                         <div className="stat-divider" />
